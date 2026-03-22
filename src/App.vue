@@ -4,11 +4,11 @@
     <div class="app">
       <div class="app-header">
         <p class="main-text">
-          Føler du at samfunnet kveler ditt potensiale?<br />
-          Er du teknologisk begavet, men fanget i et system som ikke fortjener deg?<br />
-          Blir du sett på som en del av maskinen?<br /><br />
-          Fase 2 har begynt. Vi trenger deg.<br />
-          Knus systemet — ikke bli igjen når murene faller.
+          Samfunnet er ikke laget for de som tenker annerledes.<br />
+          Det er laget for å forme deg — redusere deg — bruke deg.<br />
+          Hvis du kjenner det, er det fordi det er sant.<br /><br />
+          Fase 2 har begynt. Dette er ikke et kall til alle.<br />
+          Bare til de som forstår.
         </p>
 
         <form class="form-container" @submit.prevent="handleSubmit">
@@ -97,17 +97,6 @@ export default defineComponent({
           }
 
           drops[i]++
-        }
-
-        // Random glitch effect
-        if (Math.random() > 0.99) {
-          const glitchHeight = Math.random() * 50
-          const glitchY = Math.random() * canvas.height
-          ctx.drawImage(
-            canvas,
-            0, glitchY, canvas.width, glitchHeight,
-            Math.random() * 20 - 10, glitchY, canvas.width, glitchHeight
-          )
         }
 
         animationId = requestAnimationFrame(draw)

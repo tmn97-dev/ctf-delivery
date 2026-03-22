@@ -70,10 +70,10 @@ TEKNISK OPPSETT
 
 Start den klonede tjenesten med Docker:
 
-  docker pull tmn97/fase2/mysweetjournal
-  docker run -p 5000:5000 tmn97/fase2/mysweetjournal
+  docker pull tmn97gaming/fase2-mysweetjournal
+  docker run -p 3001:3001 tmn97gaming/fase2-mysweetjournal
 
-Appen kjører på: http://localhost:5000
+Appen kjører på: http://localhost:3001
 
 ================================================================
 
